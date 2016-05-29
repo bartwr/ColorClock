@@ -1,0 +1,23 @@
+<link rel="import" href="./beeminder-graph.html">
+
+<script>
+xtag.register('x-beeminder-stats', {
+  lifecycle:{
+    created: function(){
+      console.log("Look! It's moving. It's alive!");
+    }
+  },
+  content: function(){/*
+    <h2>Beeminder</h2>
+    <x-beeminder-graph>
+  */}
+});
+</script>
+
+<style>
+x-beeminder-stats{
+  display:block;
+  background:#fff;
+  padding:15px;
+}
+</style>

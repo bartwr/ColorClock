@@ -15,5 +15,9 @@
 
     "chrome_url_overrides" :{
         "newtab": "src/clock.html"
-    }
+    },
+
+    "permissions": [
+        "https://www.beeminder.com/api/"
+    ]
 }

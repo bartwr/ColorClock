@@ -1,0 +1,25 @@
+<script>
+xtag.register('x-beeminder-graph', {
+  lifecycle:{
+    created: function(){
+      this.getBeeminderData().done(this.showBeeminderData);
+    }
+  },
+  methods: {
+    getBeeminderData: function(){
+      return $.getJSON('https://www.example.com/rest/beeminder');
+    },
+    showBeeminderData: function(data){
+      $('x-beeminder-graph').append('<img src="'+data.graph_url+ '" alt="beeminder graph" />');
+    }
+  },
+  content: function(){/*
+    <h2 hidden>Graph</h2>
+  */}
+});
+</script>
+
+<style>
+x-beeminder-graph{
+}
+</style>
