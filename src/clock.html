@@ -41,25 +41,19 @@
     }
 	</style>
 
-  <!-- Get the X-Tag library that wraps the W3C standard Web Components for rapid component development -->
-  <script src="../node_modules/x-tag/dist/x-tag-core.min.js"></script>
-
   <!-- Get the jQuery library -->
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-
-  <!-- Import web components -->
-  <link rel="import" href="../components/beeminder-stats/beeminder-stats.html">
 
 </head>
 
 <body>
 
 <div class="unselectable" id="hex"></div>
-
-<x-beeminder-stats></x-beeminder-stats>
+<div class="stats"></div>
 
 <!-- Additional scripts -->
 <script src="color.js"></script>
+<script src="beeminder.js"></script>
 
 </body>
 </html>
